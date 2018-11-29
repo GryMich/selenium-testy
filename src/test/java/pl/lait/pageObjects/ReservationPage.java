@@ -12,6 +12,7 @@ public class ReservationPage {
 
 	WebDriver driver;
 	
+	
 	@FindBy(xpath = "/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[2]/td[2]/b/font/input[2]")
 	WebElement oneWayRadio;
 	
@@ -91,5 +92,8 @@ public class ReservationPage {
 		Select preferedAirlineSelect = new Select (airline);
 		preferedAirlineSelect.selectByVisibleText(prefAirline);
 	}
+
+
+
 }
 

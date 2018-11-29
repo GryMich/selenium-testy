@@ -8,6 +8,7 @@ import org.junit.runners.MethodSorters;
 import org.openqa.selenium.WebDriver;
 
 import pl.lait.pageObjects.LoginPage;
+import pl.lait.pageObjects.ReservationPage;
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 
@@ -28,8 +29,12 @@ public class Login2Test {
 		
 	}
 	
-	@Test
+		
 	public void reservation () {
+		ReservationPage reservationPage = new ReservationPage();
+		reservationPage.oneWayRadioClick();
+		reservationPage.roundTripRadioClick();
+		reservationPage.passengersCount(null);
 		
 	}
 	@After
