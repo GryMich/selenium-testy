@@ -3,6 +3,7 @@ package pl.lait.selenium1;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.FixMethodOrder;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runners.MethodSorters;
 import org.openqa.selenium.WebDriver;
@@ -22,7 +23,8 @@ public class Login2Test {
 	public void openPage() {
 		driver = Init.getDriver();
 	}
-
+	
+	@Ignore 
 	@Test
 	public void reservation() {
 		// 1 - otwieramy przeglądarke i logujemy się do aplikacji
