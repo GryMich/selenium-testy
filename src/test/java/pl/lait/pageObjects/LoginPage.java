@@ -20,7 +20,7 @@ public class LoginPage {
 	@FindBy(name = "password")
 	WebElement passwdInput;
 
-	@FindBy(name = "userName")
+	@FindBy(name = "login")
 	WebElement loginBtn;
 
 	public LoginPage() {
