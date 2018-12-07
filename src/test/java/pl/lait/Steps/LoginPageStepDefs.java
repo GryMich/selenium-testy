@@ -96,5 +96,7 @@ public class LoginPageStepDefs {
 	    // Write code here that turns the phrase above into concrete actions
 	    throw new PendingException();
 	}
-
+	public void close() {
+		Init.endTest();
+	}
 }
